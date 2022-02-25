@@ -97,3 +97,32 @@ const baff = 'bath';
 const gbe = "sleep";
 const together = "i am going to " + chao + " " + "then" + " " + baff + " " + "and" + " " + gbe + ".";
 console.log(together);
+
+//ARRAY
+/*With JavaScript array variables, we can store several pieces of data in one place.
+
+You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:*/
+
+//Nest one Array within Another Array
+//let league = [["EPl", 20], ["Laliga", 15]];
+//console.log(league);
+const myArray = [["Epl", 20], ["Laliga", 15]]
+console.log(myArray);
+
+const myArrray = [50, 60, 70];
+const myData = myArrray[0];
+console.log(myData);
+
+let cars = ['Benz', 'Volvo', 'Audi'];
+cars[0] = "Chevrolet";
+console.log(cars);
+
+const students = [
+    [234, 378, 456],
+    [987, 936, 276],
+    [23, 45, 56],
+    [[948, 754, 983], 888, 345, 290],
+];
+const student = students[3][0][2];
+console.log(student);
+
