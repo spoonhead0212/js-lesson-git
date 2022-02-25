@@ -35,3 +35,65 @@ console.log(UIDLC + ui);
 //DECLARING NUMBER VALUE
 let phoneNumber = '08184656329';
 console.log(`this my number ${phoneNumber}`); //string interpolation
+
+//ADD ONE TO THE CURRENT VARIABLE VALUE
+myAge = 29;
+myAge++;
+console.log(`comes december i will be ${myAge} year old`);
+
+//REMOVE ONE FROM THE VARIABLE VALUE
+myCatAge = 5;
+myCatAge--;
+console.log(`comes december my cat will be ${myCatAge} year old`);
+
+//DECIMAL VALUE
+let myGrade = 3.8;
+console.log(Math.floor(myGrade));
+
+//THE (REMAINDER) OPERATOR % GIVE REMAINDER OF THR DIVISION OF TWO NUMBERS
+const remainder = 99 % 3;
+console.log(remainder);
+
+//ADDITIONAL ASSIGNMENT OPERATOR
+let firstBorn = 30;
+let secondBorn = 25;
+let lastBorn = 20;
+
+firstBorn -= 1;
+secondBorn += 1;
+lastBorn *= 2;
+console.log(firstBorn, secondBorn, lastBorn);
+
+//ESCAPING LITERAL QUOTES IN JAVASCRIPT '\ at the front and back of the quotes
+let sentence = "Everything is gonna go \"RIGHT\" for me this year. so i aint \'TRIPPING\' at all";
+console.log(sentence);
+
+//STRING CONCATENATION
+let loud = 'Loud dey sweet normal. ';
+loud += 'but colos mayan'
+console.log(loud);
+
+//Find the Length of a String with .length
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+lastNameLength = lastName.length;
+console.log(lastNameLength);
+
+//Use Bracket Notation to Find the First Character in a String
+// Setup
+let firstLetterOfLastName = "";
+const lastNames = "Lovelace";
+
+firstLetterOfLastName = lastNames[0];
+
+//Understand String Immutability
+let captain = 'Bolu';
+let chill = captain[3];
+console.log(chill);
+
+const chao = "eat";
+const baff = 'bath';
+const gbe = "sleep";
+const together = "i am going to " + chao + " " + "then" + " " + baff + " " + "and" + " " + gbe + ".";
+console.log(together);
