@@ -99,9 +99,10 @@ const together = "i am going to " + chao + " " + "then" + " " + baff + " " + "an
 console.log(together);
 
 //ARRAY
-/*With JavaScript array variables, we can store several pieces of data in one place.
+/*With JavaScript array variables, we can store several pieces of data in one place.*/
+const myList = [['Iphone', 100], ['Samsung', 50], ["John", 23], ["cat", 2], ["Kunle", 25]];
 
-You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:*/
+//You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:*/
 
 //Nest one Array within Another Array
 //let league = [["EPl", 20], ["Laliga", 15]];
@@ -126,3 +127,55 @@ const students = [
 const student = students[3][0][2];
 console.log(student);
 
+//PUSH()
+//.push() takes one or more parameters and "pushes" them onto the end of the array.
+const studentAge = [["Kunle", 25], ["Adeoye", 22]];
+studentAge.push(["Bola", 21]);
+console.log(studentAge);
+
+//POP()
+//.pop() is used to pop a value off of the end of an array. We can store this popped off value by assigning it to a variable. In other words, .pop() removes the last element from an array and returns that element.
+
+const myArrayy = [["John", 23], ["cat", 2]];
+const removedFromMyArray = myArrayy.pop();
+console.log(removedFromMyArray);
+console.log(myArrayy);
+
+//SHIFT
+//pop() always removes the last element of an array. What if you want to remove the first?
+
+//That's where .shift() comes in. It works just like .pop(), except it removes the first element instead of the last.
+const dogAge = [['Kel', 3], ['Kelly', 2]]
+const doggy = dogAge.shift();
+console.log(dogAge);
+console.log(doggy);
+
+//UNSHIFT()
+//.unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
+const gadget = [['Iphone', 100], ['Samsung', 50]];
+gadget.shift();
+gadget.unshift('Tecno', 20);
+console.log(gadget);
+
+//FUNCTION
+//Write Reusable JavaScript with Functions
+//In JavaScript, we can divide up our code into reusable parts called functions.
+function example() {
+    console.log('Learning js');
+}
+example()
+
+/*function myFunc(frr1, frr2) {
+    console.log(frr1, frr2);
+}
+myFunc(20 * 20)*/
+
+function teachers(school) {
+    return school * 5;
+}
+console.log(teachers(20));
+
+const familyFunction = function() {
+    console.log(4);
+}
+familyFunction()
