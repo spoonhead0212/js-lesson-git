@@ -8,6 +8,8 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: #000;
     color: #ffffff;
+    /*FDBF00 yellow */
+    /*#0095FF blue*/
 }
 
 .header-section {
@@ -77,8 +79,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-    margin-top: 7rem;
-    margin-bottom: 3.5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .coding--child h2 {
@@ -109,3 +111,23 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.card-container {
+    width: 100%;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.card-container__card {
+    background-color: rgb(39, 30, 30);
+    padding: 2rem 1rem;
+}
+
+.card-container__card h3 {
+    margin-block: 1rem;
+}
+
+

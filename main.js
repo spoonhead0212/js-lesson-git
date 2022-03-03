@@ -179,3 +179,68 @@ const familyFunction = function() {
     console.log(4);
 }
 familyFunction()
+
+//CHANGE ALL JS VALUE TO UPPPERCASE
+//.UpperCase()
+
+//CANCEL JS WHITESPACE
+//.trim()
+
+//MATH.RANDOM() TO GENERATE NUMBER FROM 0 TO 1
+console.log(Math.random())
+
+//MATH.FLOOR() TO ROUND UP NUMBER INTO THE LOWEST INTEGER
+console.log(Math.floor(3.8));
+
+//MATH.CEIL() TO ROUND UP NUMBER INTO THE HIGHEST INTEGER
+console.log(Math.ceil(19.1));
+
+//NUMBER.INTEGER IS USED TO CHECK IF A NUMBER IS INTERGER OR NOT
+console.log(Number.isInteger(4));
+
+//TYPEOF IS USED TO KNOW THE TYPEMOF YOUR VARIABLE's VALUE
+let product = 'tv';
+console.log(typeof product);
+
+//choosed to use the const variable declaration because i have no intention changing that.
+//choosed to use the const variable declaration because i have no intention changing that.
+const Kelvin = 293;
+//subtracted kelvin's value
+celsius = Kelvin - 273;
+let fahrenheit = celsius * (9/5) + 32;
+console.log(fahrenheit);
+
+//ELSE IF STATEMENT
+let today = '2'
+if (today == 1) {
+    console.log('Not today');
+} else {
+    console.log('today');
+}
+
+const Xmas = 'Dec 25';
+if (Xmas == 'Dec 20') {
+    console.log('not yet');
+} else if (Xmas == 'Dec 21') {
+    console.log('Not close!');
+} else if (Xmas == 'Dec 22') {
+    console.log('Not here!');
+} else if (Xmas == 'Dec 23'){
+    console.log('Not there yet se');
+} else {
+    console.log('You all got it wrong cos it was jesus birthday');
+};
+
+//TRUTHY AND FALSY VALUES
+let myParents = 4;
+if (myParents) {
+    console.log('My my parents have 4 children');
+} else {
+    console.log('they have just one daughter');
+};
+
+let username = 'Visitor';
+let random = username || 'stranger';
+console.log(random);
+
+
