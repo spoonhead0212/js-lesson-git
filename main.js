@@ -243,4 +243,30 @@ let username = 'Visitor';
 let random = username || 'stranger';
 console.log(random);
 
+//TERNARY OPERATOR saves ud less coding
+let isNight = true;
+isNight ? console.log('Lets go to bed now')
+: console.log('Not yet time for bed');
+
+const mood = 'swing'
+
+mood != 'swing' ? console.log('Not happy')
+: console.log('I am super excited');
+
+//THR SWITCH KEYWORD
+let score = 85;
+switch (score) {
+    case 50:
+        console.log("Mid");
+        break;
+    case 60:
+        console.log('credit');
+        break;
+        case 70:
+        console.log('B');
+        break;
+        case 85:
+        console.log("Perfect!");
+        break;
+}
 
