@@ -108,7 +108,7 @@ const myList = [['Iphone', 100], ['Samsung', 50], ["John", 23], ["cat", 2], ["Ku
 //let league = [["EPl", 20], ["Laliga", 15]];
 //console.log(league);
 const myArray = [["Epl", 20], ["Laliga", 15]]
-console.log(myArray);
+console.log(myArray[0]);
 
 const myArrray = [50, 60, 70];
 const myData = myArrray[0];
@@ -243,13 +243,13 @@ let username = 'Visitor';
 let random = username || 'stranger';
 console.log(random);
 
-//TERNARY OPERATOR saves ud less coding
+//TERNARY OPERATOR saves us less coding
 let isNight = true;
 isNight ? console.log('Lets go to bed now')
 : console.log('Not yet time for bed');
 
-const mood = 'swing'
 
+const mood = 'swing'
 mood != 'swing' ? console.log('Not happy')
 : console.log('I am super excited');
 
@@ -269,4 +269,20 @@ switch (score) {
         console.log("Perfect!");
         break;
 }
+
+
+//LOOP
+for (w = 0; w <=20; w += 1) {
+    console.log(w);
+}
+
+let nameee = 'Aguero';
+(nameee) ? console.log(`how are you ${nameee}?`) :
+console.log(`how are you stranger`);
+
+let userName = '';
+(userName) ? console.log(`Hello, ${userName}!`) : conlsole.log('Hello!');
+
+//let marks = prompt('Enter your mark');
+//document.getElementById('emotion').innerHTML = marks;
 
