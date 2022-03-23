@@ -211,6 +211,48 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 2rem;
 }
 
+.summer-details {
+    
+}
+
+.summer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.summer-head {
+    background-color: rgb(39, 30, 30);
+    padding: 1rem 5rem 1rem 2rem;
+}
+
+.contact-form {
+    padding: 2rem;
+}
+
+.about {
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 6px;
+    margin-top: .3rem;
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+.form-submit {
+    padding: .5rem 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: #43B929;
+}
+
 @media screen and (max-width: 960px) {
     .features__child {
         text-align: center;
