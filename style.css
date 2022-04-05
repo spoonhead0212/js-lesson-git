@@ -216,13 +216,12 @@ h1,h2,h3,h4,h5,h6 {
     margin-block: .5rem;
 }
 
-.contact h2 {
+.contact {
+    margin-bottom: 7rem;
+}
+.spec-h2 {
     text-align: center;
     margin-bottom: 2rem;
-}
-
-.summer-details {
-    
 }
 
 .summer {
@@ -287,6 +286,14 @@ input, textarea {
 
     .images-icon {
         padding-right: unset;
+    }
+
+    .summer {
+        display: block;
+    }
+
+    .summer-details {
+        margin-bottom: 1rem;
     }
 }
 
