@@ -12,6 +12,11 @@ body {
     /*#0095FF blue*/
 }
 
+::selection {
+    background-color: #F1D302;
+    color: aqua;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-weight: 900;
     font-size: 2rem;
@@ -199,7 +204,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .blog-images {
+    opacity: 0.5;
     max-width: 100%;
+}
+
+.blog-images:hover {
+    opacity: 1;
 }
 
 .blog h3 {
