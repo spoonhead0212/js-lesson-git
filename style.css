@@ -262,6 +262,127 @@ input, textarea {
     background-color: #43B929;
 }
 
+.switch {
+    border: 3px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+}
+
+.switch-wrapper {
+    padding: 5rem;
+    border: #F1D302 1px solid;
+}
+
+/*input[type="checkbox"].toggle {
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+/*this is to make the checkbox disappear but still function*/
+
+/*input[type="checkbox"].toggle:checked + label {
+    color: red;
+    font-weight: 800;
+}
+/*this is the label design*/
+
+/*input[type="checkbox"].toggle + label {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*need to flex this so the switch could show up*/
+/*flex does work for before and after psy tho*/
+
+/*input[type="checkbox"].toggle + label::before {
+   content: "";
+   width: 2em;
+   height: 1em;
+   background-color: rgb(153, 174, 238);
+   border-radius: 1em;
+   margin-right: .25em;
+}
+/*this is to design the switch body and also place it before the label*/
+
+/*input[type="checkbox"].toggle + label::after {
+    content: "";
+    width: .9em;
+    height: .9em;
+    background-color: royalblue;
+    border-radius: 1em;
+    margin-right: .25em;
+    position: absolute;
+    left: .1em;
+ }
+/*this to the tiny switch inside. it is after the label but with absolute its gonna find it parentss*/
+
+/*input[type="checkbox"].toggle:checked + label::after {
+    left: 1em;
+    background-color: rgb(102, 10, 10);
+}
+/*this kinda like tell the after switch to move right on checked*/
+
+/*input[type="checkbox"].toggle:checked + label::after {
+   background-color: rgb(102, 10, 10);
+}*/
+
+input[type="checkbox"].toggle {
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+/*this is to hide the checkbox*/
+
+/*input[type="checkbox"].toggle:checked + label {
+    color: blue;
+}
+to change the label content color on checked state*/
+
+input[type="checkbox"].toggle + label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/*used to position switch and also to make the label the home for every other content*/
+
+input[type="checkbox"].toggle + label::before {
+    content: '';
+    width: 45px;
+    height: 20px;
+    background-color: rgb(153, 174, 238);
+    border-radius: 1em;
+    margin-bottom: 1rem;
+}
+/*this is the big toggle switch body*/
+
+input[type="checkbox"].toggle + label::after {
+    content: "";
+    width: .9em;
+    height: .9em;
+    background-color: royalblue;
+    border-radius: 1em;
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    transition: .45s;
+}
+/*this is the little circle inside of the toggle box but to the left*/
+
+input[type="checkbox"].toggle:checked + label:after {
+    left: 27px;
+    background-color: white;
+    transition: .45s;
+}
+/*this is the little circle inside of the toggle box but to the right*/
+
+
+
+
 @media screen and (max-width: 960px) {
     .features__child {
         text-align: center;

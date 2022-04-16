@@ -1,3 +1,4 @@
+
 /*In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
 
 MYVAR is not the same as MyVar nor myvar. It is possible to have multiple distinct variables with the same name but different casing. It is strongly recommended that for the sake of clarity, you do not use this language feature.
@@ -262,16 +263,16 @@ switch (score) {
     case 60:
         console.log('credit');
         break;
-        case 70:
+    case 70:
         console.log('B');
         break;
-        case 85:
+    case 85:
         console.log("Perfect!");
-        break;
+    break;
 }
 
 
-//LOOP
+//LOOPp
 for (w = 0; w <=20; w += 1) {
     console.log(w);
 }
@@ -280,8 +281,9 @@ let nameee = 'Aguero';
 (nameee) ? console.log(`how are you ${nameee}?`) :
 console.log(`how are you stranger`);
 
-let userName = '';
-(userName) ? console.log(`Hello, ${userName}!`) : conlsole.log('Hello!');
+let igwe = '';
+(igwe) ? console.log(`King`) : 
+console.log('would you like to be titi?');
 
 //let marks = prompt('Enter your mark');
 //document.getElementById('emotion').innerHTML = marks;
