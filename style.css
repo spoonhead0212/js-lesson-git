@@ -322,38 +322,60 @@ input[type="checkbox"].toggle + label{
 }
 /*needed to flex this so i could see the toggle and also relative to be the switch parent*/
 
+input[type="checkbox"].toggle:checked + label{
+    
+}
+
+
 input[type="checkbox"].toggle + label::before {
     content: "";
     width: 3em;
     height: 1.75em;
     border-radius: 1.5em;
     background-color: white;
+    transition: .45s;
 }
 /*the switch white bg*/
+
+input[type="checkbox"].toggle:checked + label::before{
+    background-color:#bef2b3;
+    transition: .45s;
+}
+/*this changes the background color when it get toggled*/
 
 input[type="checkbox"].toggle + label::after {
     content: "";
     position: absolute;
     width: 1.5em;
-    height: 1.5em;
-    left: 3px;
-    top: 2px;
-    border-radius: 1em;
+    /*height: 1.5em;*/
+    height: .90em;
+    left: .1em;
+    top: .25em;
+    /*border-radius: 1em;*/
+    transform: rotateZ(-45deg);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     background-color: #F1D302;
     transition: .45s;
 } 
 /*switch toggle to the left with yellow bg*/
 
 input[type="checkbox"].toggle:checked + label::after {
-    left: 20px;
-    top: 2px;
+    left: .75em;
+    top: .25em;
     background-color: #43B929;
     transition: .45s;
+    transform: translateX(10px)/*<<<this right here kinda like tells the switch to move 10px to the other side. it is super important for the whole transition to work*/ 
+    rotateZ(45deg);
 }
 /*switch toggle to the right with green bg*/
+.capping {
+    display: flex;
+    align-items: center;
+}
 
-.narrator::before {
-    content: "";
+.capping > img {
+    margin-right: .5rem;
 }
 
 @media screen and (max-width: 960px) {
