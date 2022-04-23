@@ -233,6 +233,7 @@ h1,h2,h3,h4,h5,h6 {
 .summer-head {
     background-color: rgb(39, 30, 30);
     padding: 1rem 5rem 1rem 2rem;
+    text-align: center;
 }
 
 .contact-form {
@@ -273,6 +274,10 @@ input, textarea {
 .switch-wrapper {
     padding: 5rem;
     border: #F1D302 1px solid;
+}
+
+.toggle-page {
+    margin-top: 3rem;
 }
 
 .iphone {
@@ -321,10 +326,6 @@ input[type="checkbox"].toggle + label{
     display: flex;
 }
 /*needed to flex this so i could see the toggle and also relative to be the switch parent*/
-
-input[type="checkbox"].toggle:checked + label{
-    
-}
 
 
 input[type="checkbox"].toggle + label::before {
@@ -376,6 +377,31 @@ input[type="checkbox"].toggle:checked + label::after {
 
 .capping > img {
     margin-right: .5rem;
+}
+
+.new {
+    margin-bottom: 5rem;
+}
+.pages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.pages > li {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(39, 30, 30);
+    padding: .50rem;
+}
+
+.pages > li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.page-container {
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 960px) {
