@@ -398,6 +398,12 @@ input[type="checkbox"].toggle:checked + label::after {
 .pages > li a {
     text-decoration: none;
     color: #ffffff;
+    display: block;
+}
+
+.pages > li:hover {
+    border: 3px solid white;
+    transition: .45s;
 }
 
 .page-container {
