@@ -277,14 +277,99 @@ for (w = 0; w <=20; w += 1) {
     console.log(w);
 }
 
-let nameee = 'Aguero';
+let nameee = '';
 (nameee) ? console.log(`how are you ${nameee}?`) :
 console.log(`how are you stranger`);
 
 let igwe = '';
-(igwe) ? console.log(`King`) : 
-console.log('would you like to be titi?');
+(igwe) ? console.log(`i am the highest goal scorer of the world, and my name is ${igwe}`) : 
+console.log('we shall call you \'Titi boi\' ');
 
-//let marks = prompt('Enter your mark');
-//document.getElementById('emotion').innerHTML = marks;
+let raceNumber = Math.floor(Math.random() * 1000);
+let runnerRegTime = true;
+let runnerAge = 18;
 
+if (runnerAge != 18 && runnerRegTime == true) {
+  console.log('Reg early, and old enough to participate in the race.');
+} else {
+  console.log('You registered late for the race so you won\'t be participating');
+}
+
+if (runnerAge != 18 && runnerRegTime == true) {
+  console.log(`Your race number is ${raceNumber}. You will race by 9:30am`);
+} else if (runnerAge => 18 && runnerRegTime) {
+  console.log(`Your race number is ${raceNumber}. You will race by 11:00am`);
+} else if (runnerAge => 18 && runnerRegTime) {
+  console.log(`you race number is ${raceNumber}. You shall race by 12:30pm`);
+} else {
+  console.log(`Your race number is ${raceNumber}. You need to see the registration desk`)
+}
+
+//----------------
+let artistName = 'Davido';
+let stanName = '';
+
+if (artistName === 'Burna') {
+    stanName = 'Outsiders';
+} else if (artistName === 'Wizkid'){
+    stanName === 'Wizkid Fc';
+} else if (artistName === 'Davido') {
+    stanName = '30BG';
+} else {
+    console.log('B list Artist');
+} 
+//-----------
+switch (artistName) {
+    case 'Olamide':
+    stanName = 'YBNL';
+    break;
+    case 'Laycon':
+    stanName = 'Icons';
+    break;
+    default:
+    stanName = 'No stan';
+} 
+
+//Local scope
+function myPaddings() {
+    let pad = 100;
+    console.log(pad);
+}
+ myPaddings()
+
+//Global Scope
+const laptopModel = 'Lenovo';
+function myLappy() {
+    console.log(laptopModel);
+}
+myLappy();
+
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+const outerWear = 'sweater';
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+//----------------
+
+//Global and Local scope
+/*const weekDay = 'Monday';
+function today() {
+    const weekDay = 'Sunday';
+    return weekDay;
+}
+today();*/
+
+// WHILE LOOP 
+//var i = 0;
+//while (i <= 10) {
+//    console.log(w++);
+//}
+
+let kill = 20;
+console.log(kill);
