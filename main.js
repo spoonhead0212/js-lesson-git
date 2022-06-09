@@ -35,7 +35,7 @@ console.log(UIDLC + ui);
 
 //DECLARING NUMBER VALUE
 let phoneNumber = '08184656329';
-console.log(`this my number ${phoneNumber}`); //string interpolation
+    console.log(`this my number ${phoneNumber}`); //string interpolation
 
 //ADD ONE TO THE CURRENT VARIABLE VALUE
 myAge = 29;
@@ -138,7 +138,7 @@ console.log(studentAge);
 //.pop() is used to pop a value off of the end of an array. We can store this popped off value by assigning it to a variable. In other words, .pop() removes the last element from an array and returns that element.
 
 const myArrayy = [["John", 23], ["cat", 2]];
-const removedFromMyArray = myArrayy.pop();
+const removedFromMyArray = myArrayy.pop();          
 console.log(removedFromMyArray);
 console.log(myArrayy);
 
@@ -310,25 +310,15 @@ let artistName = 'Davido';
 let stanName = '';
 
 if (artistName === 'Burna') {
-    stanName = 'Outsiders';
+    console.log('We are the \'OUTSIDERS\'.');;
 } else if (artistName === 'Wizkid'){
-    stanName === 'Wizkid Fc';
+    console.log('\'FC\' for life.');
 } else if (artistName === 'Davido') {
-    stanName = '30BG';
+    console.log('\'30BG\' wa o.');
 } else {
     console.log('B list Artist');
 } 
 //-----------
-switch (artistName) {
-    case 'Olamide':
-    stanName = 'YBNL';
-    break;
-    case 'Laycon':
-    stanName = 'Icons';
-    break;
-    default:
-    stanName = 'No stan';
-} 
 
 //Local scope
 function myPaddings() {
@@ -339,7 +329,7 @@ function myPaddings() {
 
 //Global Scope
 const laptopModel = 'Lenovo';
-function myLappy() {
+function myLappy() {                         
     console.log(laptopModel);
 }
 myLappy();
@@ -354,7 +344,7 @@ const outerWear = 'sweater';
   return outerWear;
 }
 
-myOutfit();
+console.log(myOutfit());
 //----------------
 
 //Global and Local scope
@@ -373,3 +363,152 @@ today();*/
 
 let kill = 20;
 console.log(kill);
+
+//FUNCTION AND PARAMETER
+function customerName(name) {
+    console.log(`we do appreciate your presence today ${name} we expect to see you soon`)
+}
+customerName('Bolakale')
+
+//DEFAULT PARAMETER
+function greeting(name = 'Stranger') {
+    console.log(`Hello ${name}`);
+}
+greeting('SpoonHead')
+greeting()
+
+function scorer(henry = 13, pires = 27, fabregas = 10) {
+    console.log(`Henry opened the score ${henry} minute into the game`);
+    console.log(`Pires doubled the lead ${pires} minute later`);
+    console.log(`Fabregas took the game away from their reaching ${fabregas}  before the final whistle`);
+}
+scorer()
+
+function siblingsAge(mariam, moshood) {
+    let ageTogether = mariam + moshood //local scope
+    return ageTogether;
+}
+console.log(siblingsAge(20, 25));
+
+// ARRAY
+let [jesus, Debruyne, Cancelo] = [10, 30, 60];
+console.log(`first goal: ${jesus}`);
+console.log(`second goal: ${Debruyne}`);
+console.log(`third goal: ${Cancelo}`);
+
+function rectangleArea(width) {
+    const size = width + 5 /*width has no value yet*/
+    return size/*telling return to choose size variable and return*/
+  }
+const space = rectangleArea(50);/*a new variable to  assign a number to the width arguement at the top and the value is 50*/
+console.log(space);// 55
+//------------------------------------
+
+
+function multiplyByFifths(number) {
+     return number * 9/5 /*number does not have a value yet but it being aded pending the assignment */
+}
+multiplyByFifths() //undefined
+// console.log(multiplyByFifths(10));
+
+function getFahrenheit(celsius) { //new function with a new parameter
+    return multiplyByFifths(celsius) + 32; //undefine * 32
+}
+
+console.log(getFahrenheit(15)); // 15 + 32 = 47
+
+function monitorCount(rows, columns) {
+    return rows * columns;
+  }
+  
+  function costOfMonitors(rows, columns) {
+     return monitorCount(rows, columns) * 200
+     // adopted from the top function
+  }
+  
+  const totalCost = costOfMonitors(5, 4);
+  console.log(totalCost);
+
+  //--------------------
+  let virtual = 0; //variable zero
+  function virtualPlayer(num) { //virtual players number = none
+      return(num + 5) * 3  //stil notin plus 3
+  }
+
+  virtual = virtualPlayer(15);
+  console.log(virtualPlayer(15)); //
+
+  //FUNCTION EXPRESSION
+  const workers = function(dayWorkers, NightWorkers) {
+      return dayWorkers + NightWorkers
+  }
+  console.log(workers(35, 28));
+
+  //MORE EXAMPLE
+  const plantNeedsWater = function(day) {
+    if (day === 'wednesday'){
+        return true; 
+      } else {
+        return false;
+      }                      
+ };
+ console.log(plantNeedsWater('wednesday'))
+
+//ARROW FUNCTION () =>
+
+const todayTopic = (mono, poly) => {
+    if (mono === 'monogamy' && poly === 'polygamy'){
+        return true;
+    } else {
+        return false;
+    };
+}
+console.log(todayTopic('monogamy', 'polygamy'));
+
+//Concise Body Arrow Functions
+const strike = /*function(stillOn)*/stillOn => /*return*/stillOn > 5 ? true : false;
+console.log(strike(10));
+
+const mvps = (debruyne, salah) => {
+    if (debruyne => 55 && salah < 55){
+        return true;
+    } else {
+        return false;
+    }
+}
+  console.log(mvps(60, 40));
+
+  //double line
+  /*const teams = (teamNumber) =>  {
+    const numberOfTeams = teamNumbers + teamNumbers;
+    return numberOfTeams;
+  };
+  console.log(teams(10, 5));*/
+
+  //for loop
+  for (let k = 0; k < 20; k++) {
+      console.log(k);
+  }
+
+  const slide = 'nike';
+  console.log(slide.push(s));
+
+  //----------------------------
+  function myButfunc() {
+    var x = document.getElementById("read");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  
+  function darkMode() {
+      let b = document.body;
+      //'b' is assigned to the variable of (body)
+      b.classList.toggle('by-id')
+  }
+
+  const chilling = document.getElementsByClassName('intro');
+  //this is assigning the "intro" class to the variable of "chilling"
+  document.getElementById('example').innerHTML = 'this is telling the empty paragraph to include the ' + chilling[2].innerHTML;
