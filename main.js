@@ -490,25 +490,16 @@ const mvps = (debruyne, salah) => {
       console.log(k);
   }
 
-  const slide = 'nike';
-  console.log(slide.push(s));
+  let slide = 'nike';
+  slide.push(s);
+  console.log(slide);
+  
 
   //----------------------------
-  function myButfunc() {
-    var x = document.getElementById("read");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-  
-  function darkMode() {
-      let b = document.body;
-      //'b' is assigned to the variable of (body)
-      b.classList.toggle('by-id')
-  }
+//  document.getElementsByClassName('firstp').innerHTML = 'hi bro';
+/*const element = document.getElementById("intro");
+    document.getElementById("demo").innerHTML =
+      "GeeksforGeeks introduction is: " + element.innerHTML;*/
 
-  const chilling = document.getElementsByClassName('intro');
-  //this is assigning the "intro" class to the variable of "chilling"
-  document.getElementById('example').innerHTML = 'this is telling the empty paragraph to include the ' + chilling[2].innerHTML;
+      document.getElementById("demo-example").innerHTML = "i dey my day dey on my day";
+  
