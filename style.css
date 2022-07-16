@@ -622,7 +622,7 @@ input[type=checkbox].check-navi:checked + .navigation, .menu-grid {
     font-weight: 800;
     cursor: pointer;
 }
-
+/* menu over */
     .header-section {
         display: block;
     }
@@ -634,6 +634,10 @@ input[type=checkbox].check-navi:checked + .navigation, .menu-grid {
 
     .right-hand > img {
         max-width: 100%;
+     }
+
+     .left-hand {
+        padding-top: 1rem;
      }
 
     .features__child {
