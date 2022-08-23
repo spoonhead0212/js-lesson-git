@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Rubik+Maze&display=swap');
+
+
+:root {
+    --font-mchroma: 'Michroma', sans-serif;
+    --rubik-maze: 'Rubik Maze', cursive;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,7 +15,8 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: var(--font-mchroma);
     background-color: #000;
     color: #ffffff;
     /*FDBF00 yellow */
@@ -19,14 +29,49 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
+    font-family: var(--rubik-maze);
     font-weight: 900;
     font-size: 2rem;
 }
 
+.menu-grid {
+    display: none;
+}
+
+/*menu*/
+.navigation-list> li a {
+     text-decoration: none;
+     color: white;
+     font-weight: 700;
+}
+
+.navigation-list> li a:hover {
+    color: #a2a2a2;
+}
+
+.navigation-list> li {
+    margin-left: 1.5em;
+    list-style-type: none;
+}
+
+.menu-wrap {
+    padding-inline: 3%;
+    padding-block: 1em;
+    width: 100%;
+    background-color: #000;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chec {
+    display: none;
+}
+
 .header-section {
-    /* padding-block: 8rem; */
-    /* text-align: center; */
-    /* line-height: 4rem; */
     display: grid;
     grid-template-columns: 50% 50%;
     padding-block: 2rem;
@@ -42,6 +87,7 @@ h1,h2,h3,h4,h5,h6 {
     display: grid;
     place-items: center;
 }
+
 
 .right-hand > img {
    max-width: 80%;
@@ -370,12 +416,6 @@ input[type="checkbox"].toggle + label::before {
 }
 /*the switch white bg*/
 
-input[type="checkbox"].toggle:checked + label::before{
-    background-color:#bef2b3;
-    transition: .45s;
-}
-/*this changes the background color when it get toggled*/
-
 input[type="checkbox"].toggle + label::after {
     content: "";
     position: absolute;
@@ -510,62 +550,32 @@ input[type="checkbox"].toggle:checked + label::after {
     cursor: pointer;
 }
 
-/*menu*/
-.logo-img {
-    margin-left: 3%;
-}
-.navigation-list> li a {
-     text-decoration: none;
-     color: white;
-     font-weight: 700;
-}
-
-.navigation-list> li a:hover {
-    color: #a2a2a2;
-}
-
-.navigation-list> li {
-    margin-left: 1.5em;
-    list-style-type: none;
-}
-
-.menu-wrap {
-    /* padding-inline: 3%; */
-    padding-block: 1em;
-    width: 100%;
-    background-color: #000;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .navigation-list {
     display: flex;
 }
 
-.check-navi, .chec, .menu-grid {
-    display: none;
-    /* opacity: 0; */
-}
-
-input[type="checkbox"].check-nav {
-    display: none;
-}
-
-
 @media screen and (max-width: 960px) {
+
+.menu-wrap {
+    padding-inline: unset;
+    display: block;
+}
+
 .navigation {
+    position: absolute;
+    top: 100%;
+    width: 100%;
     display: none;
-    /* opacity: 0; */
+    transform-origin: top;
 }
 
 .navigation-list {
     display: block;
     text-align: center;
     padding-bottom: 2em;
+    position: absolute;
+    background-color: black;
+    width: 100%;
 }
 
 .navigation-list li {
@@ -573,24 +583,16 @@ input[type="checkbox"].check-nav {
     padding-top: 1em;
 }
 
-input[type=checkbox].check-navi:checked + .navigation, .menu-grid {
-     display: block;
-     /* opacity: 1; */
-     position: absolute;
-     left: 0;
-     top: 55px;
-     width: 100%;
-     background-color: rgb(35, 27, 27);
-     /* transition: ease-in .2s; */
-}
-
 .menu-grid {
-     top: 387px;
+    width: 100%;
+    position: absolute;
+     top: 330px;
      left: 0;
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      gap: 1em;
      padding: 1em;
+     background-color: black;
      transition: transform 400ms ease-in-out;
 }
 
@@ -613,9 +615,13 @@ input[type=checkbox].check-navi:checked + .navigation, .menu-grid {
     position: relative;
 }
 
+#emotion {
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
 .chec {
     display: block;
-    /* opacity: 1; */
     position: absolute;
     right: 3%;
     top: 5px;
@@ -638,6 +644,10 @@ input[type=checkbox].check-navi:checked + .navigation, .menu-grid {
 
      .left-hand {
         padding-top: 1rem;
+     }
+
+     .left-hand p {
+        line-height: 2rem;
      }
 
     .features__child {

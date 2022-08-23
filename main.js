@@ -10,6 +10,13 @@ Write variable names in JavaScript in camelCase. In camelCase, multi-word variab
 //var identity = prompt("whate is my name?");
 //document.getElementById('emotion') .innerHTML = identity;
 
+// MENU CODE
+$(document).ready(function(){
+    $(".chec").click(function(){
+        $(".navigation").fadeToggle(500);
+    })
+});
+
 //DECLARE JAVASCRIPT VARIABLES
 var myName;  //thats how to declare variable'
 myName = 'Bola'; //added a value to the variable already declared
